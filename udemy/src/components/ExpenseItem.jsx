@@ -1,13 +1,13 @@
 import React from "react";
+import "./expenseItem.css";
 
-function ExpenseItem() {
-  const expenseTitle = "Car Insurance";
+function ExpenseItem(props) {
   return (
     <div className="expense-item">
-      <div>March 22th,2022</div>
+      <div>{props.date.format()}</div>
       <div className="expense-item__description">
-        <h2>{expenseTitle}</h2>
-        <div className="expense-item__price">$299.34</div>
+        <h2>{props.title}</h2>
+        <div className="expense-item__price">${props.amount}</div>
       </div>
     </div>
   );
