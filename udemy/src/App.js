@@ -1,5 +1,3 @@
-import React from "react";
-import DateObject from "react-date-object";
 import ExpenseItem from "./components/ExpenseItem";
 
 function App() {
@@ -7,13 +5,13 @@ function App() {
     {
       title: "Car Insurance",
       amount: "299",
-      date: new DateObject("2020 8 21"),
+      date: new Date(2020, 8, 21),
     },
-    { title: "House Rent", amount: "200", date: new DateObject("2020 8 21") },
+    { title: "House Rent", amount: "200", date: new Date(2020, 8, 21) },
     {
       title: "Medicine Cost",
       amount: "100",
-      date: new DateObject("2020 8 21"),
+      date: new Date(2020, 8, 21),
     },
   ];
 
