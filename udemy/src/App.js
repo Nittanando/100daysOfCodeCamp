@@ -1,40 +1,36 @@
-import ExpenseItem from "./components/ExpenseItem";
+import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpenses/NewExpense";
 
-function App() {
+const App = () => {
   const expenses = [
     {
+      id: "e1",
       title: "Car Insurance",
-      amount: "299",
-      date: new Date(2020, 8, 21),
+      amount: 299,
+      date: new Date(2020, 7, 20),
     },
-    { title: "House Rent", amount: "200", date: new Date(2020, 8, 21) },
+    { id: "e2", title: "House Rent", amount: 200, date: new Date(2020, 4, 1) },
     {
+      id: "e3",
       title: "Medicine Cost",
-      amount: "100",
-      date: new Date(2020, 8, 21),
+      amount: 100,
+      date: new Date(2020, 3, 23),
+    },
+    {
+      id: "e5",
+      title: "Furniture Cost",
+      amount: 300,
+      date: new Date(2020, 9, 23),
     },
   ];
 
   return (
     <div className="App">
-      <h2>Expense Chart</h2>
-      <ExpenseItem
-        title={expenses[0].title}
-        amount={expenses[0].amount}
-        date={expenses[0].date}
-      />
-      <ExpenseItem
-        title={expenses[1].title}
-        amount={expenses[1].amount}
-        date={expenses[1].date}
-      />
-      <ExpenseItem
-        title={expenses[2].title}
-        amount={expenses[2].amount}
-        date={expenses[2].date}
-      />
+      <h2>Expense Tracker Application</h2>
+      <NewExpense />
+      <Expenses items={expenses} />
     </div>
   );
-}
+};
 
 export default App;
