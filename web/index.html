@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <button onclick="age()">age</button>
     <button onclick="javascript()">javascript</button>
     <button onclick="nullishOperator()">nullish operator</button>
@@ -14,87 +14,96 @@
     <button onclick="hundred()">greater than 100</button>
     <button onclick="nameAge('nittanando', '28')">nameAge</button>
     <button onclick="showPrimes(100)">showPrimes</button>
+    <button onclick="objectTest()">object</button>
 
     <script>
-        // let name = prompt("what is your name ?")
-        // alert(`your name is ${name}`)
+      // let name = prompt("what is your name ?")
+      // alert(`your name is ${name}`)
 
-        // alert('z'>'a');
+      // alert('z'>'a');
 
-        // let a = 0;
-        // alert( Boolean(a) );
-        // let b='0';
-        // alert(Boolean(b));
+      // let a = 0;
+      // alert( Boolean(a) );
+      // let b='0';
+      // alert(Boolean(b));
 
-        function age(){
-        let age = prompt('what is your age ?', '');
-        let message = (age<18) ? 'Kochi maal':
-        (age<30) ? 'shoresh maal':
-        (age<38) ? 'bura maal':
-        'bura vaam tuhin er moto' ;
-        alert(message)
+      function age() {
+        let age = prompt("what is your age ?", "");
+        let message =
+          age < 18
+            ? "Kochi maal"
+            : age < 30
+            ? "shoresh maal"
+            : age < 38
+            ? "bura maal"
+            : "bura vaam tuhin er moto";
+        alert(message);
+      }
+      function javascript() {
+        let js = prompt("What is the official name of javaScript?", "");
+        let message =
+          js == "ECMAscript" ? "!Right you are" : "It is ECMAscript";
+        alert(message);
+      }
+      function nullishOperator() {
+        let firstName = null;
+        let lastName = null;
+        let nickName = "Supercoder";
+
+        // shows the first defined value:
+        alert(firstName ?? lastName ?? nickName ?? "Anonymous"); // Supercoder
+      }
+      function evenNum() {
+        let i = 1;
+        for (; i <= 10; i++) {
+          i % 2 == 0 ? alert(i) : "no even numbers";
+          // if(i%2 == 0){
+          //     alert(i)
         }
-        function javascript(){
-            let js = prompt('What is the official name of javaScript?', '')
-            let message = (js == "ECMAscript") ? '!Right you are' :
-            'It is ECMAscript';
-            alert(message)
+      }
+      function hundred() {
+        outer: for (let i = 0; i < 3; i++) {
+          let input = prompt("enter value, greater than 100", "");
+          // let message = (input > 100) ? alert(`${input} is greater than 100`) :
+          // (input < 100) ? {continue}:
+          // (!input) ? {break}
+          // (input < 100) ? continue outer :
+          // (!input) ? break outer;
+
+          // (!input)? `break outer;` :
+          // (input < 100)? `continue outer;`
+
+          if (input > 100) {
+            alert(`${input} is greater than 100`);
+          } else if (!input) {
+            break outer;
+          } else if (input < 100) {
+            continue outer;
+          }
         }
-        function nullishOperator(){
-            let firstName = null;
-            let lastName = null;
-            let nickName = "Supercoder";
+      }
 
-            // shows the first defined value:
-            alert(firstName ?? lastName ?? nickName ?? "Anonymous"); // Supercoder
+      function nameAge(name, age) {
+        alert(name + "is" + age + "years old");
+      }
+      function showPrimes(n) {
+        nextPrime: for (let i = 2; i < n; i++) {
+          for (let j = 2; j < i; j++) {
+            if (i % j == 0) continue nextPrime;
+          }
+
+          alert(i); // a prime
         }
-        function evenNum(){
-            let i = 1;
-            for(;i<=10;i++){
-                (i%2 == 0)? alert(i) : 'no even numbers'
-                // if(i%2 == 0){
-                //     alert(i)        
-            }
-        }
-        function hundred(){
-            outer: for(let i=0; i<3; i++){
-                let input = prompt('enter value, greater than 100', '')
-                // let message = (input > 100) ? alert(`${input} is greater than 100`) :
-                // (input < 100) ? {continue}:
-                // (!input) ? {break}
-                // (input < 100) ? continue outer :
-                // (!input) ? break outer;
-
-                // (!input)? `break outer;` :
-                // (input < 100)? `continue outer;`
-
-                if(input > 100){
-                    alert(`${input} is greater than 100`);
-                }
-                else if(!input){
-                    break  outer;
-                }
-                else if(input < 100){
-                    continue outer;
-                }
-            }
-        }
-
-        function nameAge(name, age){
-            alert(name + "is" + age + "years old")
-
-        }
-        function showPrimes(n) {
-            nextPrime: for (let i = 2; i < n; i++) {
-
-                for (let j = 2; j < i; j++) {
-                    if (i % j == 0) continue nextPrime;
-                 }
-
-                alert( i ); // a prime
-            }
-        }
+      }
+      function objectTest() {
+        let user = {
+          name: "john",
+          age: 26,
+          "broken heart": true,
+        };
+        alert(user.age);
+        console.log(user["broken heart"]);
+      }
     </script>
-    
-</body>
+  </body>
 </html>
