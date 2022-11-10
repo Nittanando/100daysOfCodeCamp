@@ -3,9 +3,9 @@ import MenuItem from "./MenuItem";
 import "./sideBar.scss";
 import { SidebarData } from "./SidebarData";
 
-function Sidebar() {
+function Sidebar({ setToggle }) {
   return (
-    <div className="sidebar-area">
+    <div className={`sidebar-area ${setToggle ? "sBar-toggle" : ""}`}>
       <div className="sidebar-wrapper">
         <ul>
           {SidebarData.map((item, index) => (
