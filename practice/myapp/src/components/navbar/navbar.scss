@@ -8,7 +8,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    img {
+    .logo-sm {
+      display: none;
+    }
+    .logo-lg {
       max-height: 4rem;
       width: 290px;
       padding: 2px 4px;
@@ -53,6 +56,33 @@
       }
       span {
         color: azure;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .logo-section {
+    min-width: auto !important;
+    margin-left: 10px;
+    .logo-lg {
+      display: none;
+    }
+    .logo-sm {
+      display: block !important;
+      max-height: 3.5rem;
+      min-width: 3.5rem;
+      border-radius: 1rem;
+      padding: 10px 8px;
+      box-shadow: inset 6px 6px 12px #353359, inset -6px -6px 12px #454373;
+    }
+  }
+  .nav-content-area {
+    .profile-area {
+      .profile-icon {
+        margin-right: 0 !important;
+      }
+      span {
+        display: none;
       }
     }
   }

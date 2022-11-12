@@ -3,16 +3,24 @@ import React, { useState } from "react";
 function MenuItem(props) {
   const { title, iconClass, submenus } = props;
   const [arrow, setArrow] = useState(false);
+  // const [clicked, setClicked] = useState("0");
+
+  // const handleClick = (index) => {
+  //   if (clicked === index) {
+  //     return setClicked("0");
+  //   }
+  //   setClicked(index);
+  // };
 
   return (
     <div>
-      <li
-        onClick={() => {
-          setArrow(!arrow);
-        }}
-        className="nav-item"
-      >
-        <span className="nav-item-wrap">
+      <li className="nav-item">
+        <span
+          className="nav-item-wrap"
+          onClick={() => {
+            setArrow(!arrow);
+          }}
+        >
           <div>
             <i className={iconClass}></i>
             <a href="#">{title}</a>

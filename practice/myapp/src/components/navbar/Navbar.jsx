@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Logosm from "../../asset/image/logo-sm.png";
 import Logolg from "../../asset/image/pe-logo.png";
 import "./navbar.scss";
 
@@ -11,7 +12,8 @@ function Navbar(props) {
   return (
     <div className="nav-area">
       <div className="logo-section">
-        <img src={Logolg} alt="logo" />
+        <img className="logo-lg" src={Logolg} alt="logo" />
+        <img className="logo-sm" src={Logosm} alt="logo" />
       </div>
       <div className="nav-content-area">
         <i onClick={toggle} className="fa-solid fa-bars"></i>

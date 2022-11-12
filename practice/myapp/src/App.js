@@ -7,7 +7,8 @@ import Sidebar from "./components/sidebar/Sidebar";
 function App() {
   const [toggle, setToggle] = useState("false");
   function SwapMenu() {
-    setToggle((prevState) => !prevState);
+    // setToggle((prevState) => !prevState);
+    setToggle(!toggle);
   }
   return (
     <div>

@@ -1,6 +1,3 @@
-.sBar-toggle {
-  left: -300px !important;
-}
 .sidebar-area {
   min-height: calc(100vh - 5rem);
   width: 300px;
@@ -27,6 +24,7 @@
         border-radius: 1rem;
         position: relative;
         cursor: pointer;
+        z-index: 0;
 
         &::before {
           content: "";
@@ -67,6 +65,8 @@
           align-items: center;
           width: 100%;
           justify-content: space-between;
+          position: relative;
+          z-index: 999;
           i {
             margin-right: 10px;
           }
@@ -150,10 +150,16 @@
     }
   }
 }
+.sBar-toggle {
+  left: -300px;
+}
 
 @media only screen and (max-width: 1025px) {
   .sidebar-area {
-    left: -300px;
+    left: -300px !important;
     transition: left 0.4s;
+  }
+  .sBar-toggle {
+    left: 0 !important;
   }
 }
