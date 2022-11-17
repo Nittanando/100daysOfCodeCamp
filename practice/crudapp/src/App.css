@@ -1,0 +1,85 @@
+.App {
+  text-align: center;
+  font-family: Menlo, Roboto Mono, monospace;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.create-label-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.create-label-input label {
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.create-label-input input {
+  height: 2rem;
+  width: 20rem;
+}
+.create-label-checkbox {
+  display: flex;
+}
+.create-label-input .checkbox {
+  height: auto;
+  width: fit-content;
+}
+.checkbox-title {
+  font-size: 0.9rem;
+  margin: 0;
+  margin-left: 5px;
+}
+.create-button {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 0;
+  border: none;
+  margin-top: 15px;
+  float: left;
+  cursor: pointer;
+}
+
+.table {
+  font-size: 1rem;
+  text-align: left;
+  border-collapse: collapse;
+}
+.table tr {
+  height: 2rem;
+}
+.table tr th,
+.table tr td {
+  border: 1px solid azure;
+  padding: 5px;
+}
+.table tr td a {
+  width: 100%;
+}
+.table tr td button {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0;
+  border: none;
+}
