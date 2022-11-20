@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+}
+.count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.count-child {
+  width: 20px;
+  background-color: aliceblue;
+  padding: 10px;
+  border: 1px solid black;
+}
+.c-pointer {
+  cursor: pointer;
+}
+.toggle-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toggle-sub {
+  height: 500px;
+  width: 500px;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toggle-sub button {
+  padding: 0.9rem;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 0;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
