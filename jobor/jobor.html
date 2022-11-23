@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .question {
+        border-bottom: 4px solid navy !important;
+      }
+      .position-relative label {
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 20px;
+        color: navy;
+      }
+      .position-relative input {
+        height: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <div class="mb-4 mt-5">
+          <input
+            type="text"
+            class="form-control question border-0 rounded-0 fs-2 shadow-none"
+            id="q1"
+            placeholder="Enter question here, add options below"
+          />
+        </div>
+        <div class="position-relative d-flex mb-3">
+          <span class="w-100">
+            <label class="position-absolute fs-5 fw-bold" for="">1</label>
+            <input
+              type="text"
+              class="form-control shadow-none ps-5"
+              id=""
+              placeholder="option"
+            />
+          </span>
+          <span class="d-flex align-items-center ps-4 pe-4">
+            <a href="">Remove</a>
+          </span>
+        </div>
+        <div class="position-relative d-flex mb-3">
+          <span class="w-100">
+            <label class="position-absolute fs-5 fw-bold" for="">1</label>
+            <input
+              type="text"
+              class="form-control shadow-none ps-5"
+              id=""
+              placeholder="option"
+            />
+          </span>
+          <span class="d-flex align-items-center ps-4 pe-4">
+            <a href="">Remove</a>
+          </span>
+        </div>
+        <a href="" onclick="addANother()">add another</a>
+        <a href="">Poll Settings</a><br />
+        <button class="btn btn-lg btn-primary mt-4">Create Poll</button>
+      </form>
+    </div>
+    <script>
+      function addANother() {
+        var parent = document.querySelector(".container form");
+        var option = "";
+        option = "<div></div>";
+        parent.appendChild(option);
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

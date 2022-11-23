@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      .w-10 {
+        min-width: 8rem;
+      }
+      input[type="range"] {
+        height: 15px;
+        background-color: aqua;
+        font-size: 20px;
+      }
+      input[type="range"]::-moz-range-progress {
+        background: rgb(74, 74, 249);
+        height: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container pt-5">
+      <h2>4521</h2>
+      <div class="mt-4">
+        <div class="card shadow-sm p-2 mb-3">
+          <span class="card-title mb-0"
+            ><strong class="pe-2">1</strong>ewsdh</span
+          >
+          <div class="d-flex justify-content-between">
+            <form class="ms-3 w-75" onchange="rangeInput()" action="">
+              <input
+                class="w-100"
+                min="1"
+                max="100"
+                type="range"
+                id="range-input"
+                disabled
+              />
+            </form>
+            <span class="w-10 text-center" id="vote"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.querySelector("#range-input").value = "75";
+      let votevalue = document.querySelector("#range-input").value;
+      let votemax = document.querySelector("#range-input").max;
+      document.querySelector("#vote").innerHTML = votevalue + "% of " + votemax;
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
