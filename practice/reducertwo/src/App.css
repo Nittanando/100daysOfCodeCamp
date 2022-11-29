@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.main-container {
+  min-height: 100vh;
+}
+.fa-gear {
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.fa-gear:hover {
+  transform: rotate(90deg);
+}
