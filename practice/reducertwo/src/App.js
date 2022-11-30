@@ -1,36 +1,28 @@
-import { useState } from "react";
+// import { useContext, useState } from "react";
 import "./App.css";
-// import AppContextProvider from "./AppContext";
+import { AppContextProvider } from "./AppContext";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Leftcolumn from "./components/Leftcolumn";
+import Nav from "./components/Nav";
 import Rightcolumn from "./components/Rightcolumn";
 
 function App() {
-  const [color, setColor] = useState("black");
-  const [size, setSize] = useState(16);
-  const [like, setLike] = useState(0);
+  // const { darkMode } = useContext(AppContext);
   return (
-    <div className="container-fluid g-0 main-container position-relative">
-      <nav className="navbar navbar-dark bg-dark">
-        <h1 className="text-light p-1 ps-3">React Application</h1>
-      </nav>
-      <div className="container mt-4">
-        <Header like={like} />
-        <div className="row mt-4">
-          <Leftcolumn
-            size={size}
-            setSize={setSize}
-            color={color}
-            setColor={setColor}
-            setLike={setLike}
-          />
-          <Rightcolumn size={size} color={color} />
+    <AppContextProvider>
+      <div className="container-fluid g-0 main-container position-relative">
+        <Nav />
+        <div className="container mt-4 pb-4">
+          <Header />
+          <div className="row mt-4">
+            <Leftcolumn />
+            <Rightcolumn />
+          </div>
         </div>
+        <Footer />
       </div>
-      <footer className="navbar navbar-dark bg-dark position-absolute bottom-0 w-100">
-        <h1 className="text-light text-center p-1 w-100">React Application</h1>
-      </footer>
-    </div>
+    </AppContextProvider>
   );
 }
 

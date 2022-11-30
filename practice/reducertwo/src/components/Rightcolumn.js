@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "../AppContext";
 
-function Rightcolumn(props) {
+function Rightcolumn() {
+    const {size, color, darkMode} = useContext(AppContext);
   return (
     <div className="col-md-8 col-lg-8 col-xl-8 col-sm-12 mt-4 mt-md-0 mt-lg-0 mt-xl-0">
-      <div className="p-3 border shadow-sm rounded">
+      <div className={`p-3 border shadow-sm rounded ${darkMode ? "bg-dark text-light" : ""}`}>
         <p
           className="p-2 bg-light"
-          style={{ fontSize: `${props.size}px`, color: `${props.color}` }}
+          style={{ fontSize: `${size}px`, color: `${color}` }}
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem esse
           officia doloremque quam! Dolor atque obcaecati tempora reprehenderit
