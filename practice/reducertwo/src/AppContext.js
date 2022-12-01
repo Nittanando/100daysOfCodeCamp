@@ -1,41 +1,39 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useReducer } from "react";
+import ReducerContext from "./ReducerContext";
 
 const AppContext = createContext();
-// function reducerFunction(){
+function reducerFunction(state, action) {
+  switch (action.type) {
+    case "INCREMENT_LIKE":
+      return { ...state, like: state.like + 1 };
+    case "COLOR":
+      return { ...state, color: action.value };
+    case "SIZE":
+      return { ...state, size: action.value };
+    case "DARK_MODE":
+      return {
+        ...state,
+        darkMode: !state.darkMode,
+      };
+    default:
+      return state;
+  }
+}
 
-// }
-// const initialState = {
-//     like: 0,
-//     size: 18,
-// }
+const initialState = {
+  color: "black",
+  like: 0,
+  size: 18,
+  darkMode: false,
+};
 
 function AppContextProvider(props) {
-  // const [state, dispatch] = useReducer(reducerFunction, initialState)
-  const [color, setColor] = useState("black");
-  const [size, setSize] = useState(16);
-  const [like, setLike] = useState(0);
-  const [darkMode, setDarkMode] = useState(false);
-  const handleLike = () => {
-    setLike(like + 1);
-  };
+  const [state, dispatch] = useReducer(reducerFunction, initialState);
+
   return (
-    <div>
-      <AppContext.Provider
-        value={{
-          color,
-          setColor,
-          size,
-          setSize,
-          like,
-          setLike,
-          handleLike,
-          darkMode,
-          setDarkMode,
-        }}
-      >
-        {props.children}
-      </AppContext.Provider>
-    </div>
+    <ReducerContext.Provider value={dispatch}>
+      <AppContext.Provider value={state}>{props.children}</AppContext.Provider>
+    </ReducerContext.Provider>
   );
 }
 export { AppContextProvider, AppContext };

@@ -1,4 +1,3 @@
-// import { useContext, useState } from "react";
 import "./App.css";
 import { AppContextProvider } from "./AppContext";
 import Footer from "./components/Footer";
@@ -8,7 +7,6 @@ import Nav from "./components/Nav";
 import Rightcolumn from "./components/Rightcolumn";
 
 function App() {
-  // const { darkMode } = useContext(AppContext);
   return (
     <AppContextProvider>
       <div className="container-fluid g-0 main-container position-relative">

@@ -2,13 +2,18 @@ import React, { useContext } from "react";
 import { AppContext } from "../AppContext";
 
 function Rightcolumn() {
-    const {size, color, darkMode} = useContext(AppContext);
+  const state = useContext(AppContext);
+
   return (
     <div className="col-md-8 col-lg-8 col-xl-8 col-sm-12 mt-4 mt-md-0 mt-lg-0 mt-xl-0">
-      <div className={`p-3 border shadow-sm rounded ${darkMode ? "bg-dark text-light" : ""}`}>
+      <div
+        className={`p-3 border shadow-sm rounded ${
+          state.darkMode ? "bg-dark text-light" : ""
+        }`}
+      >
         <p
           className="p-2 bg-light"
-          style={{ fontSize: `${size}px`, color: `${color}` }}
+          style={{ fontSize: `${state.size}px`, color: `${state.color}` }}
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem esse
           officia doloremque quam! Dolor atque obcaecati tempora reprehenderit
