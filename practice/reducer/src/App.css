@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,7 @@ body {
 }
 nav {
   font-family: "Raleway", sans-serif !important;
+  transition: all 0.4s;
 }
 .home-line-style::after {
   content: "";
@@ -64,4 +66,43 @@ nav {
     height: 2.6rem !important;
     transition: all 0.4s;
   }
+  .roy,
+  .and,
+  .associate {
+    font-size: 8rem !important;
+  }
+}
+.service-card-bg-img {
+  /* background: url(./asset/image/jpg/gavel.jpg);
+  background-size: 100% 100%;
+  filter: contrast(120%);*/
+  background-color: rgb(54, 52, 52);
+}
+.lady-justice {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  max-height: 35rem;
+}
+.roy,
+.and,
+.associate {
+  font-size: 15rem;
+  font-weight: bold;
+  position: absolute;
+  font-family: "Merriweather", serif;
+  word-break: break-all;
+}
+.roy {
+  top: 0;
+  left: 0;
+}
+.and {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.associate {
+  bottom: 0;
+  right: 0;
 }
