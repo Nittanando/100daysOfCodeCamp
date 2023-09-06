@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: white;
+    }
+  </style>
+  <body>
+    <script>
+      //   const obj = {
+      //     name: "nittanando",
+      //     age: 35,
+      //     intro() {
+      //       console.log(`Hello I am ${this.name} and ${this.age} years old`);
+      //     },
+      //   };
+
+      //   console.log(obj["name"]);
+      function createUser(name) {
+        const obj = {};
+        obj.name = name;
+        obj.intro = function () {
+          console.log(`hello i am ${this.name}`);
+        };
+        return obj;
+      }
+      const nion = createUser("nion");
+      nion.intro();
+    </script>
+  </body>
+</html>

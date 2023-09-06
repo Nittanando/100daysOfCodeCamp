@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+  </head>
+  <body>
+    <div></div>
+    <script>
+      //object
+
+      // const human = {
+      //   body: ["hand", "leg", "eyes", "head"],
+      //   work: ["working", "walking", "watching", "thinking"],
+      //   age: 22,
+      //   functionality() {
+      //     console.log(`${this.body[0]} is used for ${this.work[0]}`);
+      //     console.log(`${this.body[1]} is used for ${this.work[1]}`);
+      //   },
+      // };
+      // human.body[4] = "nose";
+      // human.gender = ["male", "female"];
+      // console.log(human);
+      // human.functionality();
+
+      // creating object dynamically and efficient way
+
+      //   function createHuman(body, work) {
+      //     const human = {};
+      //     human.body = body;
+      //     human.work = work;
+      //     human.functionality = function () {
+      //       console.log(`${this.body} is used for ${this.work}`);
+      //     };
+      //     return human;
+      //   }
+      //   const hand = createHuman("hand", "working");
+      //   const leg = createHuman("leg", "walking");
+      //   hand.functionality();
+      //   leg.functionality();
+
+      //   inheritance
+
+      //   function createHuman(body, work) {
+      //     const human = Object.create(humanPrototype); // Set humanPrototype as the prototype for human
+      //     human.body = body;
+      //     human.work = work;
+      //     return human;
+      //   }
+
+      //   const humanPrototype = {
+      //     functionality() {
+      //       console.log(`${this.body} is used for ${this.work}`);
+      //     },
+      //   };
+
+      //   const hand = createHuman("hand", "working"); //When createHuman is called, it creates a new object human with humanPrototype as its prototype using Object.create(humanPrototype).
+      //   const leg = createHuman("leg", "walking");
+      //   hand.functionality(); // Output: hand is used for working
+      //   leg.functionality(); // Output: leg is used for walking
+
+      //introducing constructor
+
+      // function CreateHuman(body, work) {
+      //   this.body = body;
+      //   this.work = work;
+      //   this.functionality = function () {
+      //     console.log(`${this.body} is used for ${this.work}`);
+      //   };
+      // }
+      // const hand = new CreateHuman("hand", "working");
+      // hand.functionality();
+
+      // abstractiion
+
+      // function CreateHuman(body, work) {
+      //   this.body = body;
+      //   this.work = work;
+      //   function privateMethod() {
+      //     console.log("i do bad works also");
+      //   }
+      //   this.functionality = function () {
+      //     console.log(`${this.body} is used for ${this.work}`);
+      //     privateMethod();
+      //   };
+      // }
+      // const hand = new CreateHuman("hand", "working");
+      // hand.functionality();
+
+      // polymorphism
+
+      //   function CreateHuman(body, work) {
+      //     this.body = body;
+      //     this.work = work;
+      //     function privateMethod() {
+      //       console.log("i also do bad works");
+      //     }
+      //     this.functionality = function () {
+      //       console.log(`${this.body} is used for ${this.work}`);
+      //       privateMethod();
+      //     };
+      //   }
+
+      //   function GoodHuman(body, work) {
+      //     CreateHuman.call(this, body, work);
+      //     this.functionality = function () {
+      //       console.log(`${this.body} is used for ${this.work}`);
+      //       console.log("I only do good works!");
+      //     };
+      //   }
+
+      //   GoodHuman.prototype = Object.create(CreateHuman.prototype);
+      //   GoodHuman.prototype.constructor = GoodHuman;
+
+      //   const hand = new CreateHuman("hand", "working");
+      //   const goodhand = new GoodHuman("goodhand", "helping");
+
+      //   hand.functionality();
+      //   goodhand.functionality();
+    </script>
+  </body>
+</html>

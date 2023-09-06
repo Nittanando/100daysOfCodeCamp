@@ -1,6 +1,6 @@
 import React from "react";
 import MenuItem from "./MenuItem";
-import "./sideBar.scss";
+// import "./sideBar.scss";
 import { SidebarData } from "./SidebarData";
 
 function Sidebar({ toggle }) {

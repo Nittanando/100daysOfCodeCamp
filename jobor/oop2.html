@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // PrivateyeMembers class (superclass)
+      class PrivateyeMembers {
+        constructor(name, age, email, designation, department) {
+          this.name = name;
+          this.age = age;
+          this.email = email;
+          this.designation = designation;
+          this.department = department;
+        }
+      }
+
+      // Tasks class
+      class Tasks {
+        constructor(assignedTask, pendingTask, completedTask) {
+          this.assignedTask = assignedTask;
+          this.pendingTask = pendingTask;
+          this.completedTask = completedTask;
+        }
+      }
+
+      // Frontend class
+      class Frontend extends Tasks {
+        constructor(
+          name,
+          age,
+          email,
+          designation,
+          department,
+          taskName,
+          assignedPerson,
+          startDate,
+          deliveryDate,
+          assignedTask,
+          pendingTask,
+          completedTask
+        ) {
+          super(assignedTask, pendingTask, completedTask);
+          this.name = name;
+          this.age = age;
+          this.email = email;
+          this.designation = designation;
+          this.department = department;
+          this.taskName = taskName;
+          this.assignedPerson = assignedPerson;
+          this.startDate = startDate;
+          this.deliveryDate = deliveryDate;
+        }
+      }
+
+      // Backend class
+      class Backend extends Tasks {
+        constructor(
+          name,
+          age,
+          email,
+          designation,
+          department,
+          taskName,
+          assignedPerson,
+          startDate,
+          deliveryDate,
+          assignedTask,
+          pendingTask,
+          completedTask
+        ) {
+          super(assignedTask, pendingTask, completedTask);
+          this.name = name;
+          this.age = age;
+          this.email = email;
+          this.designation = designation;
+          this.department = department;
+          this.taskName = taskName;
+          this.assignedPerson = assignedPerson;
+          this.startDate = startDate;
+          this.deliveryDate = deliveryDate;
+        }
+      }
+
+      // SQA class
+      class SQA extends Tasks {
+        constructor(
+          name,
+          age,
+          email,
+          designation,
+          department,
+          taskName,
+          assignedPerson,
+          startDate,
+          deliveryDate,
+          assignedTask,
+          pendingTask,
+          completedTask
+        ) {
+          super(assignedTask, pendingTask, completedTask);
+          this.name = name;
+          this.age = age;
+          this.email = email;
+          this.designation = designation;
+          this.department = department;
+          this.taskName = taskName;
+          this.assignedPerson = assignedPerson;
+          this.startDate = startDate;
+          this.deliveryDate = deliveryDate;
+        }
+      }
+
+      // Graphics class
+      class Graphics extends Tasks {
+        constructor(
+          name,
+          age,
+          email,
+          designation,
+          department,
+          taskName,
+          assignedPerson,
+          startDate,
+          deliveryDate,
+          assignedTask,
+          pendingTask,
+          completedTask
+        ) {
+          super(assignedTask, pendingTask, completedTask);
+          this.name = name;
+          this.age = age;
+          this.email = email;
+          this.designation = designation;
+          this.department = department;
+          this.taskName = taskName;
+          this.assignedPerson = assignedPerson;
+          this.startDate = startDate;
+          this.deliveryDate = deliveryDate;
+        }
+      }
+
+      // Marketing class
+      class Marketing extends Tasks {
+        constructor(
+          name,
+          age,
+          email,
+          designation,
+          department,
+          taskName,
+          assignedPerson,
+          startDate,
+          deliveryDate,
+          assignedTask,
+          pendingTask,
+          completedTask
+        ) {
+          super(assignedTask, pendingTask, completedTask);
+          this.name = name;
+          this.age = age;
+          this.email = email;
+          this.designation = designation;
+          this.department = department;
+          this.taskName = taskName;
+          this.assignedPerson = assignedPerson;
+          this.startDate = startDate;
+          this.deliveryDate = deliveryDate;
+        }
+      }
+
+      // Create instances of the classes
+      const member1 = new Frontend(
+        "John Doe",
+        25,
+        "john@example.com",
+        "Frontend Developer",
+        "Frontend Department",
+        "Task 1",
+        "John Doe",
+        "2023-07-01",
+        "2023-07-10",
+        5,
+        2,
+        3
+      );
+      const member2 = new Backend(
+        "Jane Smith",
+        30,
+        "jane@example.com",
+        "Backend Developer",
+        "Backend Department",
+        "Task 2",
+        "Jane Smith",
+        "2023-07-03",
+        "2023-07-12",
+        4,
+        1,
+        3
+      );
+      const member3 = new SQA(
+        "David Johnson",
+        28,
+        "david@example.com",
+        "SQA Engineer",
+        "SQA Department",
+        "Task 3",
+        "David Johnson",
+        "2023-07-05",
+        "2023-07-15",
+        3,
+        1,
+        2
+      );
+      const member4 = new Graphics(
+        "Sarah Davis",
+        27,
+        "sarah@example.com",
+        "Graphics Designer",
+        "Graphics Department",
+        "Task 4",
+        "Sarah Davis",
+        "2023-07-08",
+        "2023-07-18",
+        6,
+        2,
+        4
+      );
+      const member5 = new Marketing(
+        "Michael Wilson",
+        32,
+        "michael@example.com",
+        "Marketing Officer",
+        "Marketing Department",
+        "Task 5",
+        "Michael Wilson",
+        "2023-07-10",
+        "2023-07-20",
+        4,
+        0,
+        4
+      );
+
+      // Display member information including tasks
+      console.log("--- Member 1 ---");
+      console.log("Name:", member1.name);
+      console.log("Age:", member1.age);
+      console.log("Email:", member1.email);
+      console.log("Designation:", member1.designation);
+      console.log("Department:", member1.department);
+      console.log("Assigned Task:", member1.assignedTask);
+      console.log("Pending Task:", member1.pendingTask);
+      console.log("Completed Task:", member1.completedTask);
+      console.log("Task Name:", member1.taskName);
+      console.log("Assigned Person:", member1.assignedPerson);
+      console.log("Start Date:", member1.startDate);
+      console.log("Delivery Date:", member1.deliveryDate);
+
+      // Repeat the above console.log statements for member2, member3, member4, and member5
+      // to display their respective information and tasks.
+    </script>
+  </body>
+</html>

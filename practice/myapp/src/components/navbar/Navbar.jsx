@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Logosm from "../../asset/image/logo-sm.png";
 import Logolg from "../../asset/image/pe-logo.png";
-import "./navbar.scss";
+// import "./navbar.scss";
 
 function Navbar(props) {
   const [navToggle, setNavToggle] = useState(false);

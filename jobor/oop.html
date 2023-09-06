@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>hello world</h2>
+    <script>
+      const person = {
+        name: ["Bob", "Smith"], // this is a data item, which is referred as object's properties
+        age: 32, // this is a data item, which is referred as object's properties
+        bio: function () {
+          // this is a function which can work with the data provided, which is referred as object's method
+          console.log(
+            `${this.name[0]} ${this.name[1]} is ${this.age} years old.`
+          );
+        },
+        introduceSelf: function () {
+          // this is a function which can work with the data provided, which is referred as object's method
+          console.log(`Hi! I'm ${this.name[0]}.`);
+        },
+      };
+
+      const person2 = {
+        name: ["Bob", "Smith"],
+        age: 32,
+        bio() {
+          console.log(
+            `${this.name[0]} ${this.name[1]} is ${this.age} years old.`
+          );
+        },
+        introduceSelf() {
+          console.log(`Hi! I'm ${this.name[0]}.`);
+        },
+      };
+
+      const person3 = {
+        name: {
+          first: "bob",
+          last: "marley",
+        },
+        age: 43,
+      };
+
+      function logProperty(items) {
+        console.log(person3[items]);
+      }
+
+      //   logProperty("age");
+      //   logProperty("name");
+
+      person3["email"] = "bob@yahoo.com";
+      person3.phone = "01928372938";
+      person3.farewell = function () {
+        console.log("good bye");
+      };
+      // console.log(person3); // result : Object { name: {…}, age: 43, email: "bob@yahoo.com", phone: "01928372938", farewell: farewell() }
+
+      //   const person4 = {};
+      //   const dataName = prompt("enter the name of property.");
+      //   const dataValue = prompt("enter the value of property.");
+      //   person4[dataName] = dataValue;
+      //   console.log(person4);
+
+      function createPerson5(name) {
+        const obj = {};
+        obj.name = name;
+        obj.introduction = function () {
+          console.log(`Hi! I'm ${this.name}.`);
+        };
+        return obj;
+      }
+      const nion = createPerson5("nion");
+      nion.name;
+      nion.introduction(); // Hi! I'm nion.
+
+      const naim = createPerson5("naim");
+      naim.name;
+      naim.introduction(); //Hi! I'm naim.
+
+      function Cperson(name) {
+        this.name = name;
+        this.introduction = function () {
+          console.log(`Hi! I'm ${this.name}.`);
+        };
+      }
+      const bapi = new Cperson("bapi");
+      bapi.name;
+      bapi.introduction(); //Hi! I'm bapi.
+    </script>
+  </body>
+</html>
