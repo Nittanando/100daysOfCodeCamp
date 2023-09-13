@@ -1,0 +1,37 @@
+.menu-items {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.menu-items::after {
+  content: "";
+  border-right: 3px dotted #d0d0d7;
+  height: 20px;
+  margin-left: 15px;
+}
+.logo {
+  font-family: "VT323", monospace;
+  text-decoration: none;
+  color: #1a120b;
+  font-size: 30px;
+}
+.dropdown-button {
+  background-color: transparent;
+  transition: all 0.3s;
+}
+.dropdown-button:hover {
+  background-color: #d0d0d7;
+}
+
+.card-component {
+  background-color: #d0d0d7;
+}
+.project-card-image {
+  /* max-width: 340px; */
+  width: -moz-available;
+  max-width: -webkit-fill-available;
+}
+.card-title {
+  text-decoration: none;
+}

@@ -1,0 +1,60 @@
+:root {
+  --text-color: #e5e5cb;
+  --background-color: #1a120b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto Mono", monospace;
+}
+.name-font-size {
+  font-size: 2.4vw;
+}
+.title-font-size {
+  font-size: 1.2vw;
+}
+.paragraph-font-size {
+  font-size: 0.8vw;
+}
+.c-pointer {
+  cursor: pointer;
+}
+
+.site-container-wrapper {
+  height: 100%;
+  width: auto;
+  /* background-image: url(./assets/images/png/binary-map.png);
+  background-size: 100% 100%; */
+}
+.site-container {
+  height: 95vh;
+  overflow: hidden;
+}
+.left {
+  border-right: 2px dashed #dee2e6;
+  height: 95vh;
+  overflow-y: scroll;
+}
+.right {
+  height: 95vh;
+  overflow-y: scroll;
+}
+
+.skill-item {
+  text-decoration: none;
+  background-color: #d0d0d7;
+}
+.button {
+  transition: all 0.3s;
+}
+.button:hover {
+  background-color: #d0d0d7;
+}
+.home-contact a {
+  text-decoration: none;
+  /* font-size: 14px; */
+}
