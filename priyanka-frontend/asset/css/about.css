@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SolaimanLipi", sans-serif !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "SolaimanLipi", Arial, sans-serif !important;
+}
+
+a {
+  color: none !important;
+  text-decoration: none !important;
+}
+
+li {
+  list-style: none !important;
+}
+
+header {
+  background-color: white !important;
+}
+
+header .container {
+  height: 10vh;
+}
+
+.soical-icons img,
+.icons_share_comment {
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+}
+
+.icons_share_comment-2 {
+  height: 35px;
+  width: 35px;
+  margin: 5px;
+  transition: 0.4s all;
+}
+.say-hello {
+  margin: 5px;
+  font-weight: bold;
+}
+.p-custom {
+  padding: 50px 30px;
+  /* background-color: #f9f9ff; */
+}
+.pb_10 {
+  padding-bottom: 10px;
+}
+.footer_quote_priyanka {
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+}
+.txt_justify {
+  text-align: justify;
+}
+.vh_60 {
+  height: 60vh;
+}
+.custom-top {
+  top: 60px;
+}
+
+.image-float {
+  /* position: relative; */
+  float: left;
+  padding: 1rem;
+}
+
+.image-float img {
+  height: 500px;
+  width: 400px;
+}
+
+.image-float-right {
+  float: right;
+  padding: 1rem;
+}
+
+.image-float-right img {
+  height: 250px;
+  width: 400px;
+}
+
+.about-bg {
+  background-image: url(../image/jpg/colourful-bg1.jpg);
+  height: 60vh;
+  width: 100%;
+  background-size: 100% 100%;
+}
+
+.pad-top {
+  padding-top: 4px;
+}
+.w_app {
+  height: 30px;
+  width: 30px;
+  transition: 0.4s all;
+}
+@media only screen and (max-width: 768px) {
+  .vh_60 {
+    height: 34vh;
+  }
+  .image-float img {
+    height: 300px !important;
+    width: 275px !important;
+  }
+}

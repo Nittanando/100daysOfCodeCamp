@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>হোম | প্রিয়াংকার ভুবন</title>
+
+    <!-- seo -->
+    <meta
+      name="description"
+      content="This online SEO cheat sheet lists everyting to rank first..."
+    />
+    <meta name="keywords" content="seo,cheat,sheet" />
+    <link rel="canonical" href="https://htmlcheatsheet.com/seo/" />
+
+    <meta property="og:title" content="Cheat Sheet" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://htmlcheatsheet.com/" />
+    <meta property="og:image" content="https://htmlcheatsheet.com/demo.jpg" />
+
+    <!-- optional -->
+    <meta property="fb:admins" content="YourFacebookUsername" />
+    <meta property="og:audio" content="https://htmlcheatsheet.com/track.mp3" />
+    <meta property="og:description" content="A brief description" />
+    <meta property="og:determiner" content="the" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    <meta property="og:site_name" content="HTML CheatSheet" />
+    <meta property="og:video" content="https://htmlcheatsheet.com/video.swf" />
+
+    <!-- OG image size: 1200 × 630px or 1.9:1 ratio -->
+
+    <!-- end seo -->
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link
+      rel="alternate"
+      hreflang="es"
+      href="https://htmlcheatsheet.com/spanish/"
+    />
+    <!-- bangla-font -->
+    <link
+      href="https://fonts.maateen.me/solaiman-lipi/font.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="./asset/plugin/bootstrap-5/css/bootstrap.min.css"
+    />
+    <!-- owl-carousel css -->
+    <link
+      rel="stylesheet"
+      href="./asset/plugin/OwlCarousel2-2.3.4/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./asset/plugin/OwlCarousel2-2.3.4/owl.theme.default.min.css"
+    />
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./asset/css/style_priyanka.css" />
+  </head>
+  <style>
+    .share_social_icons {
+      width: max-content;
+      z-index: 1;
+      right: 0;
+      transition: 0.2s ease;
+    }
+    .share_social_icons img {
+      height: 20px;
+      width: 20px;
+      margin: 5px;
+      cursor: pointer;
+    }
+    #shareMedia {
+      display: none;
+    }
+  </style>
+  <body>
+    <!-- Header section -->
+    <header>
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="soical-icons">
+          <a href=""
+            ><img src="./asset/image/icons/facebook.png" alt="facebook"
+          /></a>
+          <a href=""
+            ><img src="./asset/image/icons/insta.png" alt="instagram"
+          /></a>
+          <a href=""
+            ><img src="./asset/image/icons/twitter.png" alt="twitter"
+          /></a>
+          <a href=""
+            ><img src="./asset/image/icons/youtube.png" alt="youtube"
+          /></a>
+        </div>
+        <div class="logo">
+          <h1 class="text-dark text-center">প্রিয়াংকার ভুবন</h1>
+        </div>
+        <div class="say-hello text-dark border border-dark p-2">
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="bg-transparent border-0"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            যোগাযোগ
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">
+                    প্রিয়াংকার ভুবন
+                  </h5>
+
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form action="" class="p-4">
+                    <input
+                      class="form-control mt-3 border-dark rounded-0"
+                      type="text"
+                      placeholder="আপনার নাম"
+                    />
+                    <input
+                      class="form-control mt-3 border-dark rounded-0"
+                      type="email"
+                      placeholder="আপনার মেইল"
+                    />
+                    <textarea
+                      class="mt-3 w-100 rounded-0 border-dark border-1"
+                      name=""
+                      id=""
+                      cols=""
+                      rows="5"
+                      placeholder=" আপনার মন্তব্য"
+                    ></textarea>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-dark">সেন্ড</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header section -->
+
+    <!-- Navbar section -->
+    <nav
+      id="navBar"
+      class="navbar navbar-expand-lg navbar-light bg-light sticky-top"
+    >
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">হোম</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/about-me.html">আমার সম্পর্কে</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/kobita.html">কবিতা</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/golpo.html">গল্প</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/sahityo.html">সাহিত্য রিভিউ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/cinema.html">সিনেমা রিভিউ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/potro-sahityo.html"
+                >পত্র সাহিত্য</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/books.html">বই</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/gallery.html">গ্যালারি</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar section -->
+
+    <!-- Home-page Landing section -->
+    <div class="container-fluid">
+      <div class="row vh_75">
+        <div
+          class="col-md-6 d-flex flex-column align-items-center justify-content-center home_first-section_left"
+        >
+          <section class="w-75 text-light">
+            <h1 class="display-2 fw-bolder">আমি প্রিয়াংকা</h1>
+            <p class="fw-bold">
+              নজরুল স্বভাবে ছিলেন আজীবন অস্থির, চঞ্চল। কিন্তু প্রতিভার এই
+              বরপুত্র সৃষ্টির ক্ষেত্রে ছিলেন আজীবন গভীর নিমগ্ন এক স্রষ্টা।
+              অস্থিরতা তাঁর বৈচিত্র্য ভাবনার সহচর। ব্যক্তিজীবনে নিরন্তর অবস্থান
+              ক্ষেত্রে পরিবর্তন সেই অস্থিরতা ও চাঞ্চল্যের পরিচয় বহন করে।
+              নির্দিষ্ট বিষয়ে থেমে থাকেননি তিনি। তাই শুধুই অভিনয় আর পরিচালনা নয়,
+              রীতিমতো প্রশিক্ষকের কাজ করতেন নজরুল। সহশিল্পীদের অভিনয় শেখাতেন,
+              গান তুলে দিতেন শিল্পীদের। এমনকি উচ্চারণও ঠিক করে দিতেন।
+            </p>
+          </section>
+        </div>
+        <div class="col-md-6 home_first-section_right">
+          <img
+            class="rounded-0 img-thumbnail img-fluid"
+            src="./asset/image/jpg/rsz_1priyanka-new.jpg"
+            alt="priyanka"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+
+    <div class="container mt_responsive">
+      <div class="row">
+        <!-- column left -->
+
+        <div class="col-md-8">
+          <div class="card border-0">
+            <img src="./asset/image/jpg/rainbow.jpg" alt="" class="rounded-0" />
+            <div class="d-flex align-items-center justify-content-between">
+              <a class="card-btn btn btn-dark rounded-0 mt-4" href="#">গল্প</a>
+              <section class="card_share_comment_section mt-4">
+                <div class="card_share_section d-inline">
+                  <img
+                    class="icons_share_comment d-inline p-1"
+                    src="./asset/image/icons/share.png"
+                    alt=""
+                  />
+                  <button
+                    onclick="shareMedia()"
+                    class="d-inline text-dark bg-transparent border-0"
+                  >
+                    শেয়ার
+                  </button>
+                  <div
+                    class="share_social_icons position-absolute shadow p-3 bg-light"
+                    id="shareMedia"
+                  >
+                    <img
+                      src="./asset/image/icons/facebook.png"
+                      alt="soical-icons"
+                    />
+                    <img
+                      src="./asset/image/icons/insta.png"
+                      alt="soical-icons"
+                    />
+                    <img
+                      src="./asset/image/icons/twitter.png"
+                      alt="soical-icons"
+                    />
+                    <img
+                      src="./asset/image/icons/insta.png"
+                      alt="soical-icons"
+                    />
+                  </div>
+                </div>
+                <div class="card_comment_section d-inline">
+                  <img
+                    class="icons_share_comment d-inline"
+                    src="./asset/image/icons/chat.png"
+                    alt=""
+                  />
+                  <p class="d-inline">03</p>
+                </div>
+              </section>
+            </div>
+            <p class="fst-italic fw-lighter mt-2">
+              <span>Monday, </span><span>02 May, 2022</span>
+            </p>
+            <div class="card-body p-0">
+              <h2 class="card-title">টং ঘর</h2>
+              <p class="card-text">
+                জলরঙা পেয়ালাগুলো যেন ঊষালগ্নের সদ্য স্নানরতা রমণী<br />
+                সমস্ত দিনের সতেজতায় মেলে ধরে থাকে নিজেকে<br />
+                দৈনন্দিন জীবন এবং জীবিকার পরিতৃপ্তির আধার হয়ে<br />
+                টং ঘরের কেন্দ্রীয় চরিত্রর বেশে জড়-আয়ু বিলায় সে ।<br />
+                অনন্ত যৌবনার বেশে নিরুত্তাপ শুষ্ক জিভে উত্তপ্ত স্পর্শ ঢালে ।
+              </p>
+              <a class="btn btn-outline-dark rounded-0" href="#">আরও পড়ুন</a>
+            </div>
+          </div>
+
+          <div class="card border-0 mt-4">
+            <img
+              src="./asset/image/jpg/old-book.jpg"
+              alt=""
+              class="rounded-0"
+            />
+            <div class="d-flex align-items-center justify-content-between">
+              <a class="card-btn btn btn-dark rounded-0 mt-4" href="#">গল্প</a>
+              <section class="card_share_comment_section mt-4">
+                <div class="card_share_section d-inline">
+                  <img
+                    class="icons_share_comment d-inline p-1"
+                    src="./asset/image/icons/share.png"
+                    alt=""
+                  />
+                  <a href="" class="d-inline text-dark">শেয়ার</a>
+                </div>
+                <div class="card_comment_section d-inline">
+                  <img
+                    class="icons_share_comment d-inline"
+                    src="./asset/image/icons/chat.png"
+                    alt=""
+                  />
+                  <p class="d-inline">03</p>
+                </div>
+              </section>
+            </div>
+            <p class="fst-italic fw-lighter mt-2">
+              <span>Monday, </span><span>02 May, 2022</span>
+            </p>
+            <div class="card-body p-0">
+              <h2 class="card-title">টং ঘর</h2>
+              <p class="card-text">
+                জলরঙা পেয়ালাগুলো যেন ঊষালগ্নের সদ্য স্নানরতা রমণী<br />
+                সমস্ত দিনের সতেজতায় মেলে ধরে থাকে নিজেকে<br />
+                দৈনন্দিন জীবন এবং জীবিকার পরিতৃপ্তির আধার হয়ে<br />
+                টং ঘরের কেন্দ্রীয় চরিত্রর বেশে জড়-আয়ু বিলায় সে ।<br />
+                অনন্ত যৌবনার বেশে নিরুত্তাপ শুষ্ক জিভে উত্তপ্ত স্পর্শ ঢালে ।
+              </p>
+              <a class="btn btn-outline-dark rounded-0" href="#">আরও পড়ুন</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card border-0 mt-4">
+                <img
+                  src="./asset/image/jpg/rainbow.jpg"
+                  alt=""
+                  class="rounded-0"
+                />
+                <div class="d-flex align-items-center justify-content-between">
+                  <a class="card-btn btn btn-dark rounded-0 mt-4" href="#"
+                    >গল্প</a
+                  >
+                  <section class="card_share_comment_section mt-4">
+                    <div class="card_share_section d-inline">
+                      <img
+                        class="icons_share_comment d-inline p-1"
+                        src="./asset/image/icons/share.png"
+                        alt=""
+                      />
+                      <a href="" class="d-inline text-dark">শেয়ার</a>
+                    </div>
+                    <div class="card_comment_section d-inline">
+                      <img
+                        class="icons_share_comment d-inline"
+                        src="./asset/image/icons/chat.png"
+                        alt=""
+                      />
+                      <p class="d-inline">03</p>
+                    </div>
+                  </section>
+                </div>
+                <p class="fst-italic fw-lighter mt-2">
+                  <span>Monday, </span><span>02 May, 2022</span>
+                </p>
+                <div class="card-body p-0">
+                  <h2 class="card-title">টং ঘর</h2>
+                  <p class="card-text">
+                    জলরঙা পেয়ালাগুলো যেন ঊষালগ্নের সদ্য স্নানরতা রমণী<br />
+                    সমস্ত দিনের সতেজতায় মেলে ধরে থাকে নিজেকে<br />
+                    দৈনন্দিন জীবন এবং জীবিকার পরিতৃপ্তির আধার হয়ে<br />
+                    টং ঘরের কেন্দ্রীয় চরিত্রর বেশে জড়-আয়ু বিলায় সে ।<br />
+                    অনন্ত যৌবনার বেশে নিরুত্তাপ শুষ্ক জিভে উত্তপ্ত স্পর্শ ঢালে ।
+                  </p>
+                  <a class="btn btn-outline-dark rounded-0" href="#"
+                    >আরও পড়ুন</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card border-0 mt-4">
+                <img
+                  src="./asset/image/jpg/old-book.jpg"
+                  alt=""
+                  class="rounded-0"
+                />
+                <div class="d-flex align-items-center justify-content-between">
+                  <a class="card-btn btn btn-dark rounded-0 mt-4" href="#"
+                    >গল্প</a
+                  >
+                  <section class="card_share_comment_section mt-4">
+                    <div class="card_share_section d-inline">
+                      <img
+                        class="icons_share_comment d-inline p-1"
+                        src="./asset/image/icons/share.png"
+                        alt=""
+                      />
+                      <a href="" class="d-inline text-dark">শেয়ার</a>
+                    </div>
+                    <div class="card_comment_section d-inline">
+                      <img
+                        class="icons_share_comment d-inline"
+                        src="./asset/image/icons/chat.png"
+                        alt=""
+                      />
+                      <p class="d-inline">03</p>
+                    </div>
+                  </section>
+                </div>
+                <p class="fst-italic fw-lighter mt-2">
+                  <span>Monday, </span><span>02 May, 2022</span>
+                </p>
+                <div class="card-body p-0">
+                  <h2 class="card-title">টং ঘর</h2>
+                  <p class="card-text">
+                    জলরঙা পেয়ালাগুলো যেন ঊষালগ্নের সদ্য স্নানরতা রমণী<br />
+                    সমস্ত দিনের সতেজতায় মেলে ধরে থাকে নিজেকে<br />
+                    দৈনন্দিন জীবন এবং জীবিকার পরিতৃপ্তির আধার হয়ে<br />
+                    টং ঘরের কেন্দ্রীয় চরিত্রর বেশে জড়-আয়ু বিলায় সে ।<br />
+                    অনন্ত যৌবনার বেশে নিরুত্তাপ শুষ্ক জিভে উত্তপ্ত স্পর্শ ঢালে ।
+                  </p>
+                  <a class="btn btn-outline-dark rounded-0" href="#"
+                    >আরও পড়ুন</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mt-4 mb-3 border-0">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img
+                  src="./asset/image/jpg/rainbow.jpg"
+                  class="img-fluid rounded-start h-100"
+                  alt="cards"
+                />
+              </div>
+              <div class="col-md-6">
+                <div class="card-body p-0 ml_custom">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <a class="card-btn btn btn-dark rounded-0" href="#">গল্প</a>
+                    <section class="card_share_comment_section">
+                      <div class="card_share_section d-inline">
+                        <img
+                          class="icons_share_comment d-inline p-1"
+                          src="./asset/image/icons/share.png"
+                          alt=""
+                        />
+                        <a href="" class="d-inline text-dark">শেয়ার</a>
+                      </div>
+                      <div class="card_comment_section d-inline">
+                        <img
+                          class="icons_share_comment d-inline"
+                          src="./asset/image/icons/chat.png"
+                          alt=""
+                        />
+                        <p class="d-inline">03</p>
+                      </div>
+                    </section>
+                  </div>
+                  <p class="fst-italic fw-lighter mt-2">
+                    <span>Monday, </span><span>02 May, 2022</span>
+                  </p>
+                  <h3 class="card-title">টং ঘর</h3>
+                  <p class="card-text">
+                    জলরঙা পেয়ালাগুলো যেন ঊষালগ্নের সদ্য স্নানরতা রমণী<br />
+                    সমস্ত দিনের সতেজতায় মেলে ধরে থাকে নিজেকে<br />
+                    দৈনন্দিন জীবন এবং জীবিকার পরিতৃপ্তির আধার হয়ে<br />
+                    টং ঘরের কেন্দ্রীয় চরিত্রর বেশে জড়-আয়ু বিলায় সে ।<br />
+                    অনন্ত যৌবনার বেশে নিরুত্তাপ শুষ্ক জিভে উত্তপ্ত স্পর্শ ঢালে ।
+                  </p>
+                  <!-- <section class="card_share_comment_section mt-4">
+                    <div class="card_share_section d-inline">
+                      <img
+                        class="icons_share_comment d-inline p-1"
+                        src="./asset/image/icons/share.png"
+                        alt=""
+                      />
+                      <a href="" class="d-inline text-dark">শেয়ার</a>
+                    </div>
+                    <div class="card_comment_section d-inline">
+                      <img
+                        class="icons_share_comment d-inline"
+                        src="./asset/image/icons/chat.png"
+                        alt=""
+                      />
+                      <p class="d-inline">03</p>
+                    </div>
+                  </section> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- column left -->
+        <!-- column right -->
+
+        <div class="col-md-4">
+          <div
+            class="card p-custom rounded-0 bg-dark position-sticky custom-top"
+          >
+            <form action="">
+              <input
+                class="form-control rounded-0"
+                name="search"
+                type="text"
+                placeholder="পোস্টগুলির মধ্যে খুজুন"
+              />
+              <button class="search_icon_position bg-transparent border-0">
+                <img
+                  class="icons_share_comment"
+                  src="./asset/image/icons/search.png"
+                  alt=""
+                />
+              </button>
+            </form>
+          </div>
+          <h2 class="card-title mb-4 mt-4 border-bottom border-dark pb_10">
+            জনপ্রিয় পোস্টসমূহ
+          </h2>
+          <div class="card border-0 mb-2">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="./asset/image/jpg/old-book.jpg"
+                  class="img-fluid rounded-0 h-100"
+                  alt="cards"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body p-0 ml_custom">
+                  <a class="btn btn-dark rounded-0" href="#">গল্প</a>
+                  <h5 class="card-title mt-2">
+                    <a class="text-dark" href="">কর্মফলের ক্রান্তিকাল</a>
+                  </h5>
+                  <p class="card-text fw-lighter fst-italic">
+                    <span>Monday, </span><span>02 May, 2022</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border-0 mb-2">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="./asset/image/jpg/priyanka-bibek.jpg"
+                  class="img-fluid rounded-0 h-100"
+                  alt="cards"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body p-0 ml_custom">
+                  <a class="btn btn-dark rounded-0" href="#">কবিতা</a>
+                  <h5 class="card-title mt-2">
+                    <a class="text-dark" href="">টং ঘর</a>
+                  </h5>
+                  <p class="card-text fw-lighter fst-italic">
+                    <span>Monday, </span><span>02 May, 2022</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border-0 mb-2">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="./asset/image/jpg/rainbow.jpg"
+                  class="img-fluid rounded-0 h-100"
+                  alt="cards"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body p-0 ml_custom">
+                  <a class="btn btn-dark rounded-0" href="#">সাহিত্য রিভিউ</a>
+                  <h5 class="card-title mt-2">
+                    <a class="text-dark" href="">প্রিয় শঙ্খের আংটি</a>
+                  </h5>
+                  <p class="card-text fw-lighter fst-italic">
+                    <span>Monday, </span><span>02 May, 2022</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 mb-2">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="./asset/image/jpg/old-book.jpg"
+                  class="img-fluid rounded-0 h-100"
+                  alt="cards"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body p-0 ml_custom">
+                  <a class="btn btn-dark rounded-0" href="#">সিনেমা রিভিউ</a>
+                  <h5 class="card-title mt-2">
+                    <a class="text-dark" href="">বেলা শেষে</a>
+                  </h5>
+                  <p class="card-text fw-lighter fst-italic">
+                    <span>Monday, </span><span>02 May, 2022</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="card p-custom rounded-0 mt-4 bg-dark">
+            <h5 class="card-title mb-4 text-light">নিউজ লেটার</h5>
+            <form action="">
+              <input
+                class="form-control rounded-0"
+                name="search"
+                type="text"
+                placeholder="মেইল"
+              />
+              <button class="btn btn-light rounded-0 mt-3">
+                সাবস্ক্রাইব করুন
+              </button>
+            </form>
+          </div> -->
+
+          <div class="card border-0 rounded-0 mt-4">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <iframe
+                  width=""
+                  height="300"
+                  src="https://www.youtube.com/embed/YX_CacbDJvI"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="item">
+                <iframe
+                  width=""
+                  height="300"
+                  src="https://www.youtube.com/embed/Mxw4SLYH3Bs"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="item">
+                <iframe
+                  width=""
+                  height="300"
+                  src="https://www.youtube.com/embed/CMPyEoi4R2k"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="item">
+                <iframe
+                  width=""
+                  height="300"
+                  src="https://www.youtube.com/embed/wKrI02aYaEI"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="card p-custom rounded-0 mt-4 bg-dark">
+            <h5 class="card-title mb-4 text-light">
+              কোনো তথ্যের প্রয়োজনে যোগাযোগ করুন
+            </h5>
+            <form action="">
+              <input
+                class="form-control rounded-0"
+                name="search"
+                type="text"
+                placeholder="মেইল"
+              />
+              <textarea
+                class="w-100 mt-3"
+                name=""
+                id=""
+                rows="3"
+                placeholder="আপনার মেসেজ"
+              ></textarea>
+              <button class="btn btn-light rounded-0 mt-3">সেন্ড করুন</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- column right -->
+      </div>
+    </div>
+
+    <!-- footer section -->
+
+    <footer class="container-fluid bg-dark p-5 mt-3">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <a href=""
+              ><h1 class="text-light mb-2 fwt-bold">প্রিয়াংকার ভুবন</h1></a
+            >
+            <div class="position-relative footer_resposive_logo-section">
+              <p class="text-light pt-2">
+                জলরঙা পেয়ালাগুলো যেন ঊষালগ্নের সদ্য স্নানরতা রমণী সমস্ত দিনের
+                সতেজতায় মেলে ধরে থাকে নিজেকে দৈনন্দিন জীবন এবং জীবিকার
+                পরিতৃপ্তির আধার হয়ে
+                <span class="footer_quote_priyanka">-- প্রিয়াংকা বিশ্বাস</span>
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-md-4 d-flex justify-content-center align-items-end jce_responsive"
+          >
+            <ul>
+              <li><a class="text-light mt-2" href="">আমার সম্পর্কে</a></li>
+              <li><a class="text-light mt-2" href="">কবিতা</a></li>
+              <li><a class="text-light mt-2" href="">গল্প</a></li>
+              <li><a class="text-light mt-2" href="">সাহিত্য রিভিউ</a></li>
+              <li><a class="text-light mt-2" href="">সিনেমা রিভিউ</a></li>
+              <li><a class="text-light mt-2" href="">গ্যালারি</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <div class="social-icons-footer">
+              <a href=""
+                ><img
+                  class="bg-light"
+                  src="../asset/image/icons/facebook.png"
+                  alt="facebook"
+              /></a>
+              <a href=""
+                ><img
+                  class="bg-light"
+                  src="../asset/image/icons/insta.png"
+                  alt="instagram"
+              /></a>
+              <a href=""
+                ><img
+                  class="bg-light"
+                  src="../asset/image/icons/twitter.png"
+                  alt="twitter"
+              /></a>
+              <a href=""
+                ><img
+                  class="bg-light"
+                  src="../asset/image/icons/youtube.png"
+                  alt="youtube"
+              /></a>
+            </div>
+            <div class="card bg-dark mt-4 border-0">
+              <h5 class="card-title mb-4 text-light">নিউজ লেটার</h5>
+              <form
+                action=""
+                class="d-flex flex-row align-items-center justify-content-between"
+              >
+                <input
+                  class="form-control rounded-0 w-75"
+                  name="search"
+                  type="text"
+                  placeholder="মেইল"
+                />
+                <button class="btn btn-light rounded-0">সাবস্ক্রাইব</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <hr class="text-light" />
+        <div class="row">
+          <div class="col-md-6 jce_responsive">
+            <span class="text-light"
+              >কপি রাইট © <a href="#">প্রিয়াংকার ভুবন</a> এর কাছে সমস্ত অধিকার
+              সংরক্ষিত</span
+            >
+          </div>
+          <div class="col-md-6 d-flex justify-content-end jce_responsive">
+            <span class="text-light"
+              ><a href="#">প্রাইভেট আই</a> দ্বারা ডিজাইনকৃত</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- <h1 itemprop="name">Fancy Text Generator</h1>
+      <p itemprop="description">
+        Free online fancy text generators, converters and more..
+      </p>
+      <div
+        itemprop="publisher"
+        itemscope=""
+        itemtype="http://schema.org/Organization"
+      >
+        <h4 class="footer">
+          About <span itemprop="name">Unicode Characters</span>
+        </h4>
+      </div>
+      <a
+        itemprop="license"
+        rel="license"
+        href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/deed.en_US"
+        ><img src="/images/cc_logo.png" alt="Creative Commons logo"
+      /></a> -->
+    </footer>
+    <!-- footer section -->
+
+    <!-- Home-page Landing section -->
+
+    <!-- jquery -->
+    <script src="./asset/plugin/jquery/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 1,
+            },
+            1000: {
+              items: 1,
+            },
+          },
+        });
+      });
+    </script>
+    <script>
+      let activePage = window.location.pathname;
+      document.querySelectorAll("nav a").forEach((link) => {
+        if (link.href.includes(`${activePage}`)) {
+          link.classList.add("active");
+        }
+      });
+    </script>
+    <script>
+      $(window).scroll(function () {
+        if ($(this).scrollTop() == 0) {
+          $("#navBar").css({
+            "box-shadow": "none",
+            "-moz-box-shadow": "none",
+            "-webkit-box-shadow": "none",
+          });
+        } else {
+          $("#navBar").css({
+            "box-shadow":
+              "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)",
+            "-moz-box-shadow":
+              "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)",
+            "-webkit-box-shadow":
+              "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)",
+          });
+        }
+      });
+    </script>
+
+    <!-- owl-carousel script -->
+    <script src="./asset/plugin/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+    <!-- bootstrap script -->
+    <script src="./asset/plugin/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const shareBtn = document.getElementById("shareBtn");
+
+      shareBtn.addEventListener("click", (event) => {
+        // Check for Web Share api support
+        if (navigator.share) {
+          // Browser supports native share api
+          navigator
+            .share({
+              text: "Please read this great article: ",
+              url: "https://www.google.com/",
+            })
+            .then(() => {
+              console.log("Thanks for sharing!");
+            })
+            .catch((err) => console.error(err));
+        } else {
+          // Fallback
+          alert(
+            "The current browser does not support the share function. Please, manually share the link"
+          );
+        }
+      });
+    </script>
+    <script>
+      function shareMedia() {
+        let share = document.getElementById("shareMedia");
+        if (share.style.display == "block") {
+          share.style.display = "none";
+        } else {
+          share.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

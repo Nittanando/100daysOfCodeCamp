@@ -1,0 +1,501 @@
+/* font */
+/*@import url("https://fonts.maateen.me/solaiman-lipi/font.css");*/
+/* font */
+
+@font-face {
+  font-family: "SolaimanLipi", sans-serif;
+  src: url(https://fonts.maateen.me/solaiman-lipi/font.css);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SolaimanLipi", sans-serif !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "SolaimanLipi", Arial, sans-serif !important;
+  background-image: url(../image/bg-5.png);
+  /* background-size: contain; */
+}
+
+a {
+  color: none !important;
+  text-decoration: none !important;
+}
+
+li {
+  list-style: none !important;
+}
+/* header::before {
+  content: "";
+  background-image: url(../image/bg-7.png);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.25;
+  height: 10vh;
+} */
+header {
+  background-color: white !important;
+  background-image: url(../image/bg-5.png);
+  background-size: cover;
+}
+/* nav {
+  background-image: url(../image/jpg/body_bg_40.jpeg);
+  background-size: cover;
+} */
+header .container {
+  height: 10vh;
+}
+
+.soical-icons img,
+.icons_share_comment {
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+}
+.social-icons-footer img {
+  height: 25px;
+  width: 25px;
+  margin-right: 5px;
+}
+
+.icons_share_comment-2 {
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+  transition: 0.4s all;
+}
+
+.icons_share_comment-2:hover {
+  background-color: skyblue;
+  padding: 5px;
+}
+
+.say-hello {
+  margin: 5px;
+  font-weight: bold;
+}
+
+.home_first-section_left {
+  background-image: url(../image/jpg/old-book.jpg);
+  background-size: 100% 100%;
+  filter: contrast(115%);
+}
+
+.home_first-section_right {
+  background-image: url(../image/jpg/rainbow.jpg);
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.home_first-section_right img {
+  height: 55vh;
+  position: absolute;
+  transform: translate(-20%, 18%);
+}
+
+.vh_75 {
+  height: 75vh;
+}
+
+.card-btn {
+  min-width: 7rem;
+}
+
+.card_share_section,
+.card_comment_section {
+  margin-left: 5px;
+}
+
+.mt_responsive {
+  margin-top: 5rem !important;
+}
+
+.p-custom {
+  padding: 50px 30px;
+  /* background-color: #f9f9ff; */
+}
+
+.search_icon_position {
+  position: absolute;
+  right: 35px;
+  top: 55px;
+}
+
+.ml_custom {
+  margin-left: 1rem;
+}
+
+.pb_10 {
+  padding-bottom: 10px;
+}
+
+iframe {
+  width: 100%;
+}
+
+.footer_img {
+  height: 200px;
+  width: 220px;
+}
+
+.footer_quote_priyanka {
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+}
+
+/* owl theme */
+
+.owl-dots {
+  display: none;
+}
+
+.owl-nav {
+  position: absolute;
+  width: 100%;
+  top: 43%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  width: 20px;
+  background-color: azure;
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover {
+  background-color: black;
+  color: azure;
+  border: 1px solid azure;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover {
+  background-color: black;
+  color: azure;
+  border: 1px solid azure;
+}
+
+/* owl-theme */
+
+@media only screen and (max-width: 768px) {
+  .home_first-section_right img {
+    position: relative;
+    height: 45vh;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .ml_custom {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+
+  .mt_responsive {
+    margin-top: 10rem !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mt_responsive {
+    margin-top: 14rem !important;
+  }
+
+  .card-btn {
+    min-width: 5rem;
+  }
+
+  .footer_resposive_logo-section {
+    flex-direction: column;
+  }
+
+  .jce_responsive {
+    justify-content: flex-start !important;
+  }
+  .text_end_custom {
+    text-align: left !important;
+  }
+  .soical-icons {
+    display: none;
+  }
+}
+
+/* about-me section */
+
+#myVideo {
+  height: 80vh;
+  width: 100%;
+}
+
+.carousel-item img {
+  max-height: 70vh;
+}
+
+.carousel-indicators {
+  visibility: hidden;
+}
+
+.carousel_btn_custom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  position: relative;
+  width: 7rem;
+  height: 4rem;
+  background-color: #f9f9ff;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(../image/icons/back.png);
+}
+
+.carousel-control-next-icon {
+  background-image: url(../image/icons/next.png);
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 50%;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+  top: 50%;
+}
+
+.about_img_custom_size {
+  max-height: 100vh;
+}
+
+.pcc_custom {
+  place-content: center !important;
+}
+
+.c_h_w {
+  height: 22rem;
+  width: 20rem;
+}
+
+.cutom_icon_about {
+  margin: 0 !important;
+  background-color: white;
+  margin-right: 10px !important;
+  height: 25px !important;
+  width: 25px !important;
+}
+
+.bg_paper {
+  background-image: url(../image/jpg/paper-bg.jpg);
+  background-size: 100% 100%;
+}
+
+.txt_justify {
+  text-align: justify;
+}
+
+@media only screen and (max-width: 1081px) {
+  .row__custom1081 {
+    width: 100% !important;
+    flex-direction: column !important;
+  }
+
+  .width_column_custom {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about_img_custom_size {
+    max-height: auto;
+  }
+}
+
+/* Golpo section */
+
+.owl-carousel .owl-nav.disabled {
+  display: flex;
+}
+
+.fs_golpo_card_txt {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 14px;
+}
+
+.fs_golpo_card_title {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.h_10vh_custom {
+  height: 10vh;
+}
+
+.w_auto {
+  width: auto !important;
+}
+
+.vh_50 {
+  height: 50vh;
+  background-color: #c4cbd1;
+}
+
+.vh_60 {
+  height: 60vh;
+}
+
+.card_share_comment_section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.golpo__title {
+  font-size: 5rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.golpo_bg {
+  background-image: url(../image/jpg/renesa-prokahoni.jpg);
+  background-size: 100% 100%;
+}
+
+.sahityo_bg {
+  background-image: url(../image/jpg/sahityo_bg.jpg);
+  background-size: 100% 100%;
+}
+
+.kobita_bg {
+  background-image: url(../image/jpg/noishobdo.jpg);
+  background-size: 100% 100%;
+}
+
+.gallery_bg {
+  background-image: url(../image/jpg/hand-painted-watercolor.jpg);
+  background-size: 100% 100%;
+}
+
+.color_pagination {
+  color: white !important;
+  background-color: black !important;
+}
+.potro_sahityo_bg {
+  background-image: url(../image/jpg/potro.jpg);
+  background-size: cover;
+}
+
+.cinema_review_title_section {
+  height: 25vh;
+  background-color: #070722;
+  width: 25vw;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  opacity: 0.8;
+  transform: translate(-50%, 0%);
+  border-radius: 49% 51% 47% 53% / 100% 100% 0% 0%;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.cinema_review_title_section h1 {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073,
+    0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+}
+
+@media only screen and (max-width: 768px) {
+  .cinema_review_title_section {
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.8;
+    transform: translate(0%, 0%);
+    border-radius: 0;
+    width: auto;
+    padding: 15px;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .cinema_review_title_section h1 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .vh_60 {
+    height: auto;
+  }
+}
+
+.custom-top {
+  top: 56px;
+  z-index: 999;
+  transition: 0.4s ease;
+}
+
+.about-bg {
+  background-image: url(../image/jpg/colourful-bg1.jpg);
+  height: 60vh;
+  width: 100%;
+  background-size: 100% 100%;
+}
+.book_bg {
+  background-image: url(../image/jpg/sahityo_bg-2.jpg);
+  height: 60vh;
+  width: 100%;
+  background-size: 100%;
+}
+
+.pad-top {
+  padding-top: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-bg {
+    height: auto;
+  }
+}
+.max_height_card_img {
+  max-height: 60vh;
+}
+.w_app {
+  height: 30px;
+  width: 30px;
+  transition: 0.4s all;
+}
+.w_app:hover {
+  padding: 4px;
+}
+.text_end_custom {
+  text-align: end;
+}
+.h_fit-content {
+  height: fit-content;
+}
+.img-height {
+  max-height: 60vh;
+  object-fit: cover;
+}
+.post-img-custom {
+  max-height: 70vh;
+  object-fit: contain;
+  width: 100%;
+}
